@@ -1,5 +1,16 @@
-# mit_bitcoinexpo_hackathon
-Creating a stacks-based recommender sytem for NFTs, with security measures to protect against washing.
+![Image](figs/splash.png)
+
+
+# Non-Fungible Analytics (MIT Bitcoin Hackathon 2022)
+We present a stacks-based recommender sytem for NFTs that is powered by AI, with security measures to protect against washing.
+
+Use cases include:
+-NFT collection analysis on price anomalies and multiple-wallet-ownership
+-Warning system integrated on top of recommendations and custom searches
+-Protecting the users by reducing scams, fraud and financial loss
+
+We fetched all NFT data from the Stacks Blockchain with python deployed APIs (e.g. collection name, prices, volume, description, attributes, images). After cleaning and processing this data, we ran Neural Networks and Principle Component Models to create NFT embeddings. Multidimensional mappings with many valuable use cases. 
+
 
 ## infrastructure 
 
