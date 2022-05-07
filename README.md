@@ -9,6 +9,12 @@ Use cases include:
 -Warning system integrated on top of recommendations and custom searches
 -Protecting the users by reducing scams, fraud and financial loss
 
+*AI powered recommendation* Based on descriptive and visual information of an NFT, our application identifies communities in the NFT world. New and experienced buyers in the NFT realm are recommended NFTs based on personal taste and past history of NFT ownership. This NFT community comprehension engine can be leveraged for optimal air drops, so social engagement with a relevant audience is always possible for launchpads and new entrants to the web3 space.    
+
+*user protection* It’s important to protect NFT buyers from threats of wash trading. We decided to implement a rule based flagging system. 
+If an NFT’s trading history shows abnormal activity, we flag it, in order to let users know they might want to do their research before buying. 
+Our system flags NFTs if certain statistics, like average price over floor price are unusually high. In our case, this means they are above the 90th percentile). 
+
 We fetched all NFT data from the Stacks Blockchain with python deployed APIs (e.g. collection name, prices, volume, description, attributes, images). After cleaning and processing this data, we ran Neural Networks and Principle Component Models to create NFT embeddings. Multidimensional mappings with many valuable use cases. 
 
 
