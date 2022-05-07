@@ -18,7 +18,7 @@ def query(url, request_params ):
     # results = response_dict['results']
     except:
         return []
-        
+
     return response_dict 
 
 
@@ -94,6 +94,12 @@ for ind, contract in enumerate(contract_df):
         if len(resp) == 0:
             continue 
         
+        resp2 = []
+        for r in resp:
+            r['contract'] = contract
+            resp2.append(r)
+
+        resp = resp2
         contract_features += resp
         print(contract_features)
 
@@ -107,9 +113,7 @@ for ind, contract in enumerate(contract_df):
 
     print(ind) 
 
-    if ind % 100 == 0:
-
-        
+    if ind % 100 == 0 and ind > 0:
         nfts_df = pd.DataFrame(all_nfts)
         nfts_df.to_csv('nfts_{}.csv'.format(ind) )
         all_nfts = []            
