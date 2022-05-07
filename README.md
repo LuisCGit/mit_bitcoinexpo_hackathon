@@ -9,6 +9,8 @@ For each contract, the name, description, token ID and url of constituent NFTs a
 
 etl.py provides the 'production' implementation that generated data for ingestion by the AI embedding process. Experimental versions, and the wash trade analytics, are stored in the *hackexpo* directory. 
 
+![Image](figs/dataview.png)
+
 ## AI
 
 State of the art neural networks for natural language processing and computer vision are used for embedding NFT text data and image data. The high dimensional representation of each NFT can be used for myriad use cases including NFT recommendation and targeted airdrops. The HTML files in the embedding directory contains preliminary work which can be loaded in a browser.  
@@ -16,6 +18,9 @@ State of the art neural networks for natural language processing and computer vi
 embedding.py contains a text-only machine learning model using the pretrained sentence transformer, which yields representations with informative structure for our scoped uses. 
 
 NFT_Neural_Network_Embedding_withimage.ipynb contains an image-based ML model that encodes url-retrieved images and creates an embedding on visual signals.
+
+
+![Image](figs/embed_still.png)
 
 ## embedding
 
