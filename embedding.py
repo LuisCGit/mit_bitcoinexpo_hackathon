@@ -30,7 +30,6 @@ nftdf = get_df()
 
 nftdf['d+n'] = nftdf.name.str.cat(nftdf.description)
 
-
 nftdf3 = model.encode(nftdf['attributes'], 
                       show_progress_bar=True, 
                       batch_size=2*64, 
@@ -43,11 +42,19 @@ nftdf2 = model.encode(nftdf['d+n'],
                     #   normalize_embeddings=True, 
                       device='cuda')
 
+
 nftdf2 = pd.concat([pd.DataFrame(nftdf2),pd.DataFrame(nftdf3)],axis=1)
 
 pd.DataFrame(nftdf2).to_csv('nftdf2.csv',index=False)
 
-nft_tsne = TSNE(n_components=3, n_jobs=-1).fit_transform(nftdf2)
+
+from sklearn.decomposition import PCA
+
+nft_tsne = PCA(n_components =3, ).fit_transform(nftdf2)
+# nft_tsne = TSNE(n_components=3, n_jobs=-1).fit_transform(nftdf2)
+
+
+
 pd.DataFrame(nft_tsne).to_csv('nft_tsne.csv',index=False)
 
 fig = px.scatter_3d(
@@ -71,5 +78,5 @@ fig.update_traces(marker_size = 3 )
 fig.update_coloraxes(showscale=False)
 fig.update_scenes(xaxis_visible=False, yaxis_visible=False,zaxis_visible=False )
 
-fig.write_html("attributes.html")
+fig.write_html("attributes+description_pca.html")
 fig.show()
