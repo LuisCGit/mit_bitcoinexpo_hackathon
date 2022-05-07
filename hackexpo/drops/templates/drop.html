@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>shift.</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  </head>
+
+<style>
+  body{
+    background: rgb(52,148,230);
+    background: linear-gradient(90deg, rgba(52,148,230,1) 0%, rgba(236,110,173,1) 100%);
+  }
+</style>
+
+  <body>
+    <div class="container-fluid">
+
+      <div class = 'row justify-content-center mt-5'>
+        <div class="card bg-light shadow p-3 mb-5 mt-5 rounded" style="width: 30rem;">
+          <div class="card-body">
+          <!-- <div class="card-header"> -->
+            <div class = 'card-title pb-2'>
+              <h5>Launch your targeted airdrop!</h5>
+            </div>
+          <!-- </div> -->
+             <form  method="post">  <!-- action= "{% url 'drop_execution' %}" -->
+              {% csrf_token %}
+
+              <div class="form-group">
+                <label for = 'pass'>Reach (number of members who will receive an NFT)</label>
+                <input class = 'form-control' type = 'number' id = 'pass' name = 'pass'required />
+              </div>
+
+              <div class="form-group">
+                <label for = 'bald'>Project Description</label>
+                <input class = 'form-control' type = 'text' id = 'bald' name = 'bald'required />
+              </div>
+
+              <div class="form-group">
+                <label for = 'goon'>IPFS link to metadata</label>
+                <input class = 'form-control' type = 'text' id = 'goon' name = 'goon'required />
+              </div>
+
+              <div class="form-group">
+                <label for = 'maricon'>Estimated Gas Fees</label>
+                <input class = 'form-control' type = 'text' id = 'maricon' name = 'maricon'required />
+              </div>
+              <!-- Button -->
+              <button type="submit" class="btn btn-primary btn-block mt-4">Launch!</button>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  <body>
+</html>
