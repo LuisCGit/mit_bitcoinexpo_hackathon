@@ -28,11 +28,22 @@ State of the art neural networks for natural language processing and computer vi
 
 embedding.py contains a text-only machine learning model using the pretrained sentence transformer, which yields representations with informative structure for our scoped uses. 
 
-NFT_Neural_Network_Embedding_withimage.ipynb contains an image-based ML model that encodes url-retrieved images and creates an embedding on visual signals.
+NFT_Neural_Network_Embedding.ipynb contains an image-based ML model that encodes url-retrieved images and creates an embedding on visual signals.
 
 
-![Image](figs/embed_still.png)
 
 ## embedding
 
 A directory of NFT-level embeddings visualized with t-stochastic neighbor embedding (t-SNE) and Principal Component Analysis (PCA). The html files may be loaded in a browser tab.  
+
+![Image](figs/embed_still.png)
+
+## smart-contract
+
+We decided to implement a cool feature, enabled by our NFT embeddings: A targeted airdrop. Airdrops are a fun way to add additional value to your brand or experience, but creators currently have to expend a lot of effort to find communities that support their mission. 
+We optimize airdrops by allowing creators to connect with communities that are aligned with their mission.
+
+Suppose we want to launch an airdrop for the bitcoin expo. Our webapp, built with django and bootstrap, would allow users to seamlessly upload data describing their NFT.
+Once they decide to launch, we map this data to an embedding in our latent space and find users which hold similar NFTs. 
+This process completely reduces the manual effort of finding the right communities, 
+In doing so we Increases the amount of engagement and awareness for the project
