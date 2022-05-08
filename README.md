@@ -2,7 +2,8 @@
 
 The NFT space is growing rapidly with thousands of NFTs being transacted every day. Yet:
 1) Web3 participants are paralysed by a surging supply of newly minted NFTs. 
-2) The landscape is rife with scams and unreliable information. These are high barriers to usability and adoption.
+2) There is little analytics with which to make informed transactions, nowhere near the information provided by Web2
+3) The landscape is rife with scams and unreliable information. These are high barriers to usability and adoption.
 
 ![Image](figs/problem_statement.png)
 
