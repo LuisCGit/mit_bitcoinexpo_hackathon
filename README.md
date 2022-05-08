@@ -1,4 +1,4 @@
-![Image](figs/splash.png)
+![Image](figs/splash2.png)
 
 
 # Non-Fungible Analytics (MIT Bitcoin Hackathon 2022)
