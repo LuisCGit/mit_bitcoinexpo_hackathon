@@ -1,8 +1,6 @@
 ![Image](figs/splash2.png)
 
-
-**MIT Bitcoin Hackathon 2022**
-We present a stacks-based recommender sytem for NFTs that is powered by AI, with security measures to protect against washing.
+As part of **MIT Bitcoin Hackathon 2022**, We present a stacks-based NFT recommender sytem powered by AI, with security measures to protect against wash trading. 
 
 Use cases include:
 - NFT community analysis and recommendation
