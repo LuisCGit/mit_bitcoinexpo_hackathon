@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>shift.</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  </head>
+
+  <style>
+    body{
+      background: url( "{% static '/bg.jpeg' %}");
+      background-size: 1250px;
+      /* background: rgb(52,148,230);  */
+      /* background: url(https://images.unsplash.com/photo-1415795854641-f4a487a0fdc8?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80); */
+      /* rgb(52,148,230); */
+      /* background: linear-gradient(90deg, rgba(52,148,230,1) 0%, rgba(236,110,173,1) 100%); */
+      /* background-image: url('https://imgur.com/gallery/4SGcqXg'); */
+    }
+  </style>
+
+  <body>
+    <div class="container-fluid">
+
+      <div class = 'row justify-content-center mt-5'>
+        <div class="card bg-light shadow p-3 mb-5 mt-5 rounded" style="width: 30rem;">
+          <div class="card-body">
+          <!-- <div class="card-header"> -->
+            <div class = 'card-title pb-2' id="card_title" style = "align: center ">
+              <h5>Your NFTs are on the way!</h5>
+            </div>
+
+          <!-- </div> -->
+
+              <div class="form-group">
+                <label for = 'goon'>Your airdrop is in progress and is being carried out by the following contract: </label>
+                <div type = 'text' id = 'goon' name = 'goon'> <a href="https://explorer.stacks.co/txid/SP3C49EABFC91F21DJJZA1733QJ539PEW84R66G9E.MIT-Hackathon-NFT-Airdrop?chain=mainnet">SP3C49EABFC91F21DJJZA1733QJ539PEW84R66G9E.MIT-Hackathon-NFT-Airdrop</a>
+                </div>
+              </div>
+
+              <!-- <div class="form-group">
+                <label for = 'bald'>Project Description</label>
+                <input class = 'form-control' type = 'text' id = 'bald' name = 'bald'required />
+              </div> -->
+
+
+
+              <!-- <div class="form-group">
+                <label for = 'maricon'>Estimated Gas Fees</label>
+                <input class = 'form-control' type = 'text' id = 'maricon' name = 'maricon'required />
+              </div> -->
+              <!-- Button -->
+              <!-- <button type="submit" class="btn btn-primary btn-block mt-4">Launch!</button> -->
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  <body>
+</html>

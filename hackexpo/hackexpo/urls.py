@@ -17,12 +17,13 @@ from django.contrib import admin
 from django.urls import path
 from users.views import show_nfts
 from django.views.generic import TemplateView
-from drops.views import drop_form, execute_drop
+from drops.views import drop_form, thankyou
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('drops/', drop_form),
-    path('drops/',execute_drop,name="drop_execution")
+    path('thankyou/', thankyou)
+    #path('drops/',execute_drop,name="drop_execution")
     #path('user/', show_nfts),
     #path('user/', TemplateView.as_view(template_name="nfts.html"))
 ]

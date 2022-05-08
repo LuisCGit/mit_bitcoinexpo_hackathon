@@ -20,11 +20,19 @@ from django.shortcuts import render, redirect
 
 def drop_form(request):
     if request.method == "POST":
-        print("HERE")
+        print("HERE, ABOUT TO redirect")
+        return redirect('/thankyou')
     return render(request, 'drop.html')
 
-def execute_drop(request):
-    print("HERE")
-    if request.method == "POST":
-        print("HERE")
-    return render(request, 'drop.html')
+def thankyou(request):
+    print("HERE, ABOUT TO thank your ass")
+    # if request.method == "POST":
+    #     print("HERE")
+    #     render(request, 'thankyou.html')
+    return render(request, 'thankyou.html')
+
+# def execute_drop(request):
+#     print("HERE")
+#     if request.method == "POST":
+#         print("HERE")
+#     return render(request, 'drop.html')
